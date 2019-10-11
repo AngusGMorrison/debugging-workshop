@@ -15,9 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (event) => {
     username = document.getElementById('name-input').value
     event.preventDefault();
-    if(username === "") return;
+    if (username === "") return;
     fetchJoke();
-    
   })
 
   function renderJoke(joke) {
